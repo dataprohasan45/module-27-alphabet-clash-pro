@@ -86,22 +86,24 @@
             <button class="btn rounded-full  bg-[#894189] px-4 text-white">
                 Life
                 <img src="images/heart.svg" alt="">
-                <span>1</span>
+                <span id="current-life">5</span>
               </button>
               <button class="btn rounded-full  bg-[#360490] px-4 text-white">
                 Score
                 <img src="images/doller.svg" alt="">
-                <span>1</span>
+                <span id="current-score">0</span>
               </button>
           </div>
     </div>
     </section>
     <!-- eikane game er score count hobe and last page hisabe takbe -->
-    <section class="score-count flex justify-center items-center min-h-screen hidden">
+    <section id="final-score" class=" flex justify-center items-center min-h-screen hidden">
     <div class="text-white text-center space-y-6 bg-[#FFFFFF33] p-4 rounded-lg">
-        <h1 class="text-8xl"><span class="font-extrabold">Score:</span>
-        <span>14</span></h1>
-        <button class="btn font-bold">Play Again</button>
+      <h4 class="text-3xl">Game Over!</h4>
+        <h1 class="text-8xl">
+          <span class="font-extrabold">Score:</span>
+        <span id="last-score">14</span></h1>
+        <button onclick="play()" class="btn font-bold">Play Again</button>
         <p>Plactice will make you a Pro</p>
     </div>
     </section>
